@@ -109,7 +109,7 @@ class CsvToMongoDB:
 
 
 if __name__ == "__main__":
-    logging.basicConfig(filename="db_log.txt",level=logging.INFO,format='%(asctime)s %(message)s', datefmt='%m/%d %I:%M:%S')
+    logging.basicConfig(filename="../log/db_log.txt", level=logging.INFO, format='%(asctime)s %(message)s', datefmt='%m/%d %I:%M:%S')
     csv_path = {
         "offsides": r"C:\Users\deepwind\Desktop\drug database\data\OFFSIDES.csv",
         "twosides": r"C:\Users\deepwind\Desktop\drug database\data\TWOSIDES.csv"
