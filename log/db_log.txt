@@ -1,0 +1,97 @@
+07/27 05:49:11 集合 offsides 开始转换
+07/27 05:49:51 集合 offsides 转换完成,用时39.85s
+07/27 08:32:04 所有csv文件均处理完毕
+07/27 08:32:26 所有csv文件均处理完毕
+07/27 08:33:49 所有csv文件均处理完毕
+07/27 08:34:18 所有csv文件均处理完毕
+07/27 08:43:47 集合 offsides 开始转换
+07/27 08:44:31 集合 offsides 转换完成,用时44.40s
+07/27 08:44:31 集合 twosides 开始转换
+07/27 08:55:00 集合 twosides 转换完成,用时628.23s
+07/27 08:55:00 所有csv文件均处理完毕
+07/27 09:20:13 集合 offsides 开始转换
+07/27 09:20:51 集合 offsides 转换完成,用时37.89s
+07/27 09:20:51 集合 twosides 开始转换
+07/27 09:29:39 集合 twosides 转换完成,用时528.47s
+07/27 09:29:39 所有csv文件均处理完毕
+07/28 11:10:53 集合 offsides 开始转换
+07/28 11:11:33 集合 offsides 转换完成,用时40.29s
+07/28 11:59:16 集合 twosides 开始转换
+07/28 12:08:12 集合 twosides 转换完成,用时536.66s
+07/28 01:40:18 集合 offsides 开始转换
+07/28 01:40:57 集合 offsides 转换完成,用时38.76s
+07/28 07:56:54 集合 offsides_preview 开始转换
+07/28 07:56:54 保留的字段为['\ufeffdrug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 07:56:54 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.01s
+07/28 07:57:55 集合 offsides_preview 开始转换
+07/28 07:57:55 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 07:57:55 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.01s
+07/28 08:02:31 集合 offsides_preview 开始转换
+07/28 08:02:31 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:02:31 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:04:08 集合 offsides_preview 开始转换
+07/28 08:04:08 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:04:08 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.04s
+07/28 08:04:18 集合 offsides_preview 开始转换
+07/28 08:04:18 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:04:18 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:04:41 集合 offsides_preview 开始转换
+07/28 08:04:41 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:04:41 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:05:31 集合 offsides_preview 开始转换
+07/28 08:06:42 集合 offsides_preview 开始转换
+07/28 08:06:42 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'B', 'D', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:06:42 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:08:41 集合 offsides_preview 开始转换
+07/28 08:12:43 集合 offsides_preview 开始转换
+07/28 08:16:34 集合 offsides_preview 开始转换
+07/28 08:16:44 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:18:02 集合 offsides_preview 开始转换
+07/28 08:18:08 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:18:19 集合 offsides 开始转换
+07/28 08:18:19 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:18:37 集合 offsides_preview 开始转换
+07/28 08:18:37 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:18:37 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:20:18 集合 offsides_preview 开始转换
+07/28 08:20:18 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:20:18 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:21:33 集合 offsides_preview 开始转换
+07/28 08:21:33 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:22:19 集合 offsides_preview 开始转换
+07/28 08:22:19 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:22:33 集合 offsides_preview 转换完成，共插入 39 条文档，用时13.53s
+07/28 08:24:06 集合 offsides_preview 开始转换
+07/28 08:24:06 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:24:06 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:24:44 集合 offsides_preview 开始转换
+07/28 08:24:44 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:24:44 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:25:50 集合 offsides_preview 开始转换
+07/28 08:25:50 保留的字段为['A', 'B', 'C']
+07/28 08:25:50 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:27:33 集合 offsides_preview 开始转换
+07/28 08:30:56 集合 offsides_preview 开始转换
+07/28 08:30:56 'AAC' is not in list
+07/28 08:31:55 集合 offsides 开始转换
+07/28 08:31:55 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:31:59 集合 offsides_preview 开始转换
+07/28 08:33:42 集合 offsides_preview 开始转换
+07/28 08:33:42 保留的字段为['A', 'B', 'C']
+07/28 08:33:42 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:33:49 集合 offsides_preview 开始转换
+07/28 08:33:49 保留的字段为['A', 'B', 'C']
+07/28 08:33:49 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:47:44 INFO 集合 offsides_preview 开始转换
+07/28 08:47:44 INFO 保留的字段为['A', 'B', 'C']
+07/28 08:47:44 INFO 集合 offsides_preview 转换完成，共插入 39 条文档，用时0.02s
+07/28 08:48:03 WARNING 参数错误！需要保留的字段和需要删除的字段不能同时给出！
+07/28 08:48:45 INFO 集合 offsides_preview 开始转换
+07/28 08:48:45 WARNING 'AAC' is not in list
+07/28 08:59:06 INFO 集合 offsides 开始转换
+07/28 08:59:06 INFO 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 08:59:46 INFO 集合 offsides 转换完成，共插入 3206558 条文档，用时39.82s
+07/28 08:59:46 INFO 集合 twosides 开始转换
+07/28 08:59:46 INFO 保留的字段为['drug_1_rxnorn_id', 'drug_1_concept_name', 'drug_2_rxnorm_id', 'drug_2_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+07/28 09:09:04 INFO 集合 twosides 转换完成，共插入 42920391 条文档，用时557.47s
+07/28 09:09:04 INFO 所有csv文件均处理完毕
