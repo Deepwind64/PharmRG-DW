@@ -1,4 +1,5 @@
 import logging
+import pprint
 import time
 import pymongo
 import csv
@@ -25,15 +26,17 @@ class CsvToMongoDB:
         - get_origin_fields(): 获取源 csv 文件中的所有字段名。
         - set_fields(fields_needed=None, fields_removed=None): 设置需要保留的或者删除的字段。
         - insert_data(col_name: str, buffer_size=10000): 将指定 csv 文件中的数据插入到对应的集合中。
+        - # TODO update_data()
         - auto_insert(): 自动将所有给定的 csv 文件转换为 MongoDB 集合。
     """
 
-    def __init__(self, db_name: str, csv_path: dict, db_url: str = "localhost", port: int = 27017, db_check=False,
+    def __init__(self, db_name: str, csv_path: dict, db_url: str = "localhost", port: int = 27017, user_name: str = "admin", password: str = "", db_check=False,
                  auto_insert=False):
         self.target_col_name = ""
         self.target_col_object = None  # 当前操作集合对象
         self.csv_property = {"newline": '\n', "encoding": 'utf-8', "delimiter": ','}
-        self.db = pymongo.MongoClient(db_url, port)[db_name]
+        self.client = pymongo.MongoClient(db_url, port, username=user_name, password=password)
+        self.db = self.client[db_name]
         # self.collections 示例：{col_name:(col_object, csv_path)}
         self.collections = {}
         for col_name in csv_path.keys():
@@ -121,7 +124,7 @@ class CsvToMongoDB:
         if self.db_check:
             self.assure_empty()
         logging.info(f"集合 {self.target_col_name} 开始转换")
-        start = time.time()
+        beginning_time = time.time()
         with open(self.collections[col_name][1], 'r', newline=self.csv_property["newline"],
                   encoding=self.csv_property["encoding"]) as csvfile:
             db_reader = csv.reader(csvfile, delimiter=self.csv_property["delimiter"])
@@ -136,7 +139,7 @@ class CsvToMongoDB:
                     field_allowed = [i for i in field_allowed if i not in [header.index(field) for field in self.removed_fields]]
             except ValueError as e:
                 logging.warning(e)
-                raise ValueError("指定的字段不存在")
+                raise ValueError("指定的字段不存在") from e
             header = [header[i] for i in field_allowed]
             logging.info(f"保留的字段为{header}")
             buffer = deque()
@@ -153,20 +156,24 @@ class CsvToMongoDB:
             if buffer:
                 requests = [pymongo.InsertOne(doc) for doc in buffer]
                 self.target_col_object.bulk_write(requests, ordered=False)
-            # return time.time()-start
-        logging.info(f"集合 {self.target_col_name} 转换完成，共插入 {counter} 条文档，用时{time.time() - start:.2f}s")
+        logging.info(f"集合 {self.target_col_name} 转换完成，共插入 {counter} 条文档，用时{time.time() - beginning_time:.2f}s")
 
     def auto_insert(self):
         """
         自动将所有给定的 csv 文件转换为 MongoDB 集合。
         :return: None
         """
-        # TODO 多线程优化
+        # TODO 多进程优化
         # 但可能主要耗时在IO
         for col_name in self.collections.keys():
             self.insert_data(col_name)
         logging.info("所有csv文件均处理完毕")
 
+    def db_preview(self):
+        return self.client.list_database_names()
+
+    def col_preview(self, db_name: str):
+        return self.client[db_name].list_collection_names()
 
 if __name__ == "__main__":
     # 以下为用法示例
@@ -176,6 +183,12 @@ if __name__ == "__main__":
         "offsides": r"C:\Users\deepwind\Desktop\drug database\data\OFFSIDES.csv",
         "twosides": r"C:\Users\deepwind\Desktop\drug database\data\TWOSIDES.csv"
     }
-    drugDB = CsvToMongoDB("drugdb", csv_path, db_check=True, auto_insert=True)
+    drugDB = CsvToMongoDB("PharmRG", csv_path, "117.73.10.251", user_name="readwrite", password="readwrite",db_check=True, auto_insert=True)
+    # pprint.pprint(drugDB.db_preview())
+    # pprint.pprint(drugDB.col_preview('DrugKB'))
+    # for db in drugDB.db_preview():
+    #     if db in ("admin", "local"):
+    #         pass
+    #     drugDB.col_preview(db)
     # drugDB.insert_data("offsides")
     # drugDB.insert_data("twosides")

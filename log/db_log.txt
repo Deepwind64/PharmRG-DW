@@ -95,3 +95,17 @@
 07/28 08:59:46 INFO 保留的字段为['drug_1_rxnorn_id', 'drug_1_concept_name', 'drug_2_rxnorm_id', 'drug_2_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
 07/28 09:09:04 INFO 集合 twosides 转换完成，共插入 42920391 条文档，用时557.47s
 07/28 09:09:04 INFO 所有csv文件均处理完毕
+07/29 04:19:12 WARNING 参数错误！需要保留的字段和需要删除的字段不能同时给出！
+07/29 04:19:40 INFO 集合 offsides_preview 开始转换
+07/29 04:19:40 WARNING 'AAC' is not in list
+07/29 04:20:43 INFO 集合 offsides_preview 开始转换
+07/29 04:20:43 WARNING 'AAC' is not in list
+08/02 03:15:23 INFO 集合 offsides 开始转换
+08/02 03:15:23 INFO 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+08/02 03:17:19 INFO 集合 offsides 开始转换
+08/02 03:17:19 INFO 保留的字段为['drug_rxnorn_id', 'drug_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+08/02 03:23:51 INFO 集合 offsides 转换完成，共插入 3206558 条文档，用时392.13s
+08/02 03:23:51 INFO 集合 twosides 开始转换
+08/02 03:23:51 INFO 保留的字段为['drug_1_rxnorn_id', 'drug_1_concept_name', 'drug_2_rxnorm_id', 'drug_2_concept_name', 'condition_meddra_id', 'condition_concept_name', 'A', 'B', 'C', 'D', 'PRR', 'PRR_error', 'mean_reporting_frequency']
+08/02 05:09:42 INFO 集合 twosides 转换完成，共插入 42920391 条文档，用时6350.55s
+08/02 05:09:42 INFO 所有csv文件均处理完毕
